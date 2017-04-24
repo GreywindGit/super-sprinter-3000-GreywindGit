@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {% if not story_id %}
+            <title>Super Sprinter 3000 - Add New Story</title>
+        {% else %}
+            <title>Super Sprinter 3000 - Edit Story</title>
+        {% endif %}
+    </head>
+    <body>
+        {% if not story_id %}
+            <p>Form for adding new story here...</p>
+        {% else %}
+            <p>It's a specific story that you can edit</p>
+        {% endif %}
+        <button><a href="/" style="text-decoration: none">Back</a></button>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Super Sprinter 3000</title>
+        <link rel="stylesheet" href="/static/css/style.css" style type="text/css">
+    </head>
+    <body>
+        <h3><strong>User Story Manager</strong></h3>
+        <button><a href="story">Add new story<a></button>
+        <p></p>
+        <table>
+            <tr>
+                {% for item in table_header %}
+                    <td>{{ item }}</td>
+                {% endfor %}
+            </tr>
+            {% for line in stories %}
+                <tr>
+                {% for data in line %}
+                    <td>{{ data }}</td>
+                {% endfor %}
+                </tr>
+            {% endfor %}
+
+        </table>
+    </body>
+</html>
