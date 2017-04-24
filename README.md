@@ -1,1 +1,1 @@
-# super-sprinter-3000-GreywindGit
+A basic user story manager app running on a Flask web server
