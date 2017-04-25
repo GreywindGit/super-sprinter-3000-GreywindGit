@@ -9,3 +9,8 @@ td {
 a {
     text-decoration: none;
 }
+
+input[type=number] {
+    width: 70px;
+    text-align: center;
+}
