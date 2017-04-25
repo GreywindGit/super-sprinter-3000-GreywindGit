@@ -14,3 +14,8 @@ input[type=number] {
     width: 70px;
     text-align: center;
 }
+
+
+.table-data {
+    height: 50px;
+}

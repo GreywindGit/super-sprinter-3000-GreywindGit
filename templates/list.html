@@ -18,11 +18,11 @@
                 {% for line in stories %}
                     <tr>
                     {% for data in line %}
-                        <td>{{ data }}</td>
+                        <td class="table-data">{{ data }}</td>
                     {% endfor %}
                     <td>
                         <button><a href="/story/{{ line[0] }}">&#9998</a></button>
-                        <button><a href="/list" name="{{ line[0] }}">&#128465</button>
+                        <button><a href="/list?delete={{ line[0] }}">&#128465</button>
                     </td>
                     </tr>
                 {% endfor %}
