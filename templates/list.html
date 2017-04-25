@@ -6,7 +6,7 @@
     </head>
     <body>
         <h3><strong>User Story Manager</strong></h3>
-        <button><a href="/story">Add new story<a></button>
+        <button><a href="/story">Add new story</a></button>
         <p></p>
         {% if stories %}
             <table>
@@ -20,6 +20,10 @@
                     {% for data in line %}
                         <td>{{ data }}</td>
                     {% endfor %}
+                    <td>
+                        <button><a href="/story/{{ line[0] }}">&#9998</a></button>
+                        <button><a href="/list" name="{{ line[0] }}">&#128465</button>
+                    </td>
                     </tr>
                 {% endfor %}
             </table>

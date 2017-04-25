@@ -14,10 +14,12 @@ def load_stories(filename):
     return stories
 
 
-def save_stories(new_entry, filename="stories.csv"):
+def save_stories(new_entries, filename="stories.csv"):
     try:
         with open(filename, 'a') as workfile:
-            workfile.write('#'.join(new_entry) + '\n')
+            for new_entry in new_entries:
+                workfile.write('#'.join(new_entry) + '\n')
     except FileNotFoundError:
         with open(filename, 'w') as workfile:
-            workfile.write('#'.join(new_entry) + '\n')
+            for new_entry in new_entries:
+                workfile.write('#'.join(new_entry) + '\n')
