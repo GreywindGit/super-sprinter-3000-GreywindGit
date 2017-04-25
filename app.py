@@ -29,7 +29,7 @@ def new_story(story_id=None):
     if story_id:
         edited_entry = load_story(story_id, 'stories.csv')
         return render_template('story.html', story_id=story_id, editing=edited_entry)
-    return render_template('story.html', story_id=story_id, editing=['' * 7])
+    return render_template('story.html', story_id='', editing=['' * 7])
 
 
 if __name__ == '__main__':
