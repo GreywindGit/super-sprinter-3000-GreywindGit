@@ -19,7 +19,8 @@ def list_stories():
         else:
             modify_story(request.form['story_id'], new_entry, 'stories.csv')
     stories = load_stories('stories.csv')
-    table_header = ['ID', 'Story Title', 'User Story', 'Acceptance criteria', 'Business Value', 'Estimation', 'Status']
+    table_header = ['ID', 'Story Title', 'User Story', 'Acceptance criteria', 'Business Value',
+                    'Estimation', 'Status', 'Action']
     return render_template('list.html', stories=stories, table_header=table_header)
 
 

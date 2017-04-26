@@ -35,15 +35,15 @@
 
             <label>Status<br>
                 <select name="status">
-                    <option value="planning" {{ 'selected' if editing[6] == "planning" else "" }}>Planning</option>
-                    <option value="todo" {{ 'selected' if editing[6] == "todo" else "" }}>TODO</option>
-                    <option value="in progress" {{ 'selected' if editing[6] == "in progress" else "" }}>In Progress</option>
-                    <option value="review" {{ 'selected' if editing[6] == "review" else "" }}>Review</option>
-                    <option value="done" {{ 'selected' if editing[6] == "done" else "" }}>Done</option>
+                    <option value="Planning" {{ 'selected' if editing[6] == "Planning" else "" }}>Planning</option>
+                    <option value="TODO" {{ 'selected' if editing[6] == "TODO" else "" }}>TODO</option>
+                    <option value="In Progress" {{ 'selected' if editing[6] == "In Progress" else "" }}>In Progress</option>
+                    <option value="Review" {{ 'selected' if editing[6] == "Review" else "" }}>Review</option>
+                    <option value="Done" {{ 'selected' if editing[6] == "Done" else "" }}>Done</option>
                 </select>
             </label><br><br>
             <input type="submit" value="{{ 'Create' if not story_id else 'Update' }}">
         </form>
-        <button><a href="/">Back</a></button>
+        <p><button><a href="/">Back</a></button></p>
     </body>
 </html>

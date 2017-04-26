@@ -16,6 +16,8 @@ def load_stories(filename="stories.csv"):
 
 
 def save_story(new_entry, filename="stories.csv"):
+    """ Appends a single new entry to a file.
+    """
     try:
         with open(filename, 'a') as workfile:
             workfile.write('#'.join(new_entry) + '\n')
@@ -25,6 +27,8 @@ def save_story(new_entry, filename="stories.csv"):
 
 
 def delete_story(delete_id, filename="stories.csv"):
+    """ Removes a line by the given id from the file.
+    """
     stories = list()
     id = 1
     try:
@@ -42,6 +46,8 @@ def delete_story(delete_id, filename="stories.csv"):
 
 
 def load_story(story_id, filename="stories.csv"):
+    """ Loads a single line specified by an id from the file.
+    """
     id = 1
     try:
         with open(filename, 'r') as workfile:
@@ -55,6 +61,8 @@ def load_story(story_id, filename="stories.csv"):
 
 
 def modify_story(story_id, new_entry, filename="stories.csv"):
+    """ Replaces a line specified by an id with a given new entry.
+    """
     id = 1
     stories = list()
     try:

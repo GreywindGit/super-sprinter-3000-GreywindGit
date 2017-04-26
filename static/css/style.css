@@ -1,4 +1,8 @@
-table, td {
+form {
+    border-radius: 5px;
+}
+
+table, td, form {
     border: 1px solid black;
 }
 
@@ -6,8 +10,17 @@ td {
     padding: 10px;
 }
 
+.table-data {
+    height: 50px;
+}
+
+
 a {
     text-decoration: none;
+}
+
+a:visited, a {
+    color: black;
 }
 
 input[type=number] {
@@ -15,7 +28,11 @@ input[type=number] {
     text-align: center;
 }
 
+input[type=submit] {
+    padding: 0px 20px;
+}
 
-.table-data {
-    height: 50px;
+form {
+    width: 400px;
+    padding: 30px;
 }
